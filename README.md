@@ -1,3 +1,5 @@
+Handwritten Digit Classification using Neural Networks on the MNIST Dataset
+
 This project implements a neural network in TensorFlow to classify handwritten digits from the MNIST dataset. The MNIST data is first loaded and preprocessed by normalizing pixel values to a range of 0–1 and flattening each 28x28 image into a 784-dimensional vector to be compatible with a fully connected network. The model consists of a simple neural network architecture with two hidden layers: the first layer has 128 units with ReLU activation, the second has 64 units with ReLU activation, and a final output layer has 10 units with softmax activation to classify the digits (0–9). 
 
 The model is compiled with the Adam optimizer, using sparse categorical crossentropy as the loss function and accuracy as the metric. It is then trained on the MNIST training data with a validation split to monitor performance. After training, the model’s accuracy is evaluated on the test data. The code includes a plot of training and validation accuracy over epochs and displays a few sample predictions against actual labels to visually inspect model performance.
